@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>FTC Match Scoring Predictions</title>
+  <title>FTC Match Predictions</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     * { box-sizing: border-box; }
@@ -339,7 +339,7 @@
         if (highlightTeam && matchResults[highlightTeam]) {
           const place = rankedTeams.findIndex(t => t.team === highlightTeam) + 1;
           const t = rankedTeams[place - 1];
-          addSummary(`${toOrdinal(place)} Place - Team #${highlightTeam} — RP: ${t.rp.toFixed(2)} (TBP: ${t.tbp.toFixed(2)}, W-L-T: ${t.wins}-${t.losses}-${t.ties}, High Score: ${t.highScore})`);
+          addSummary(`Predicted ${toOrdinal(place)} Place - Team #${highlightTeam} — RP: ${t.rp.toFixed(2)} (TBP: ${t.tbp.toFixed(2)}, W-L-T: ${t.wins}-${t.losses}-${t.ties}, High Score: ${t.highScore})`);
         }
 
         document.getElementById("loading").textContent = "";
